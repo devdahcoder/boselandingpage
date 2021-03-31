@@ -34,6 +34,26 @@ body {
         width: 80%;
         margin: 0 auto;
 
+        animation: scale 600ms ease-in-out forwards;
+    
+    
+        @keyframes scale {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+    
+            80% {
+                transform: scale(1.07);
+            }
+    
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    
+
         header {
             display: flex;
             align-items: center;
@@ -69,10 +89,10 @@ body {
                                 font-weight: 500;
                                 transition: 300ms;
                                 border-radius: 100vh;
+                                transition: 0.4s linear;
 
                                 &:hover {
-                                    transition: 2s linear;
-
+                                    transition: 0.4s linear;
                                     background: linear-gradient(
                                     to bottom,
                                         hsl(332.73, 6.92%, 31.18%) 0%,
@@ -128,7 +148,6 @@ body {
                             max-width: 40px;
                             outline: none;
                             border: 0px solid #000;
-                            border: 1px solid red;
                 
                             .search-input {
                                 width: 100%;
@@ -308,6 +327,12 @@ body {
                             margin-left: 10em;
                             img {
                                 width: 100%;
+                                transition: 4s linear;
+
+                                &:hover {
+                                    transition: 4s linear;
+                                    transform: rotateY(180deg);
+                                }
                             }
                         }
                     }

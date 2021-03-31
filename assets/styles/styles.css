@@ -21,6 +21,21 @@ body {
 body .container {
   width: 80%;
   margin: 0 auto;
+  animation: scale 600ms ease-in-out forwards;
+}
+
+@keyframes scale {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.07);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 body .container header {
@@ -61,10 +76,11 @@ body .container header .header-logo-nav-container .header-nav .header-ul .header
   font-weight: 500;
   transition: 300ms;
   border-radius: 100vh;
+  transition: 0.4s linear;
 }
 
 body .container header .header-logo-nav-container .header-nav .header-ul .header-li a:hover {
-  transition: 2s linear;
+  transition: 0.4s linear;
   background: linear-gradient(to bottom, #554a4f 0%, #564c51 8.1%, #595055 15.5%, #5d565c 22.5%, #625e64 29%, #68666d 35.3%, #6d6e76 41.2%, #73767e 47.1%, #797e87 52.9%, #7e858e 58.8%, #838b95 64.7%, #88919b 71%, #8b96a0 77.5%, #8e99a4 84.5%, #8f9ba6 91.9%, #909ca7 100%);
 }
 
@@ -104,7 +120,6 @@ body .container header .header-components-container .header-components-display .
   max-width: 40px;
   outline: none;
   border: 0px solid #000;
-  border: 1px solid red;
 }
 
 body .container header .header-components-container .header-components-display .component .search-box .search-input {
@@ -269,5 +284,11 @@ body .container main .main-container .main-display .main-image-container .main-i
 
 body .container main .main-container .main-display .main-image-container .main-image-display img {
   width: 100%;
+  transition: 4s linear;
+}
+
+body .container main .main-container .main-display .main-image-container .main-image-display img:hover {
+  transition: 4s linear;
+  transform: rotateY(180deg);
 }
 /*# sourceMappingURL=styles.css.map */
