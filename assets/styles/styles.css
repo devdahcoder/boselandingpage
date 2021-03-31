@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-image: url("../images/gradient.svg"), url("../images/Union.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, 450px;
+  background-position: right center, top right;
+  min-height: 100vh;
+}
+
+body .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body .container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1em 0;
+}
+
+body .container header .header-logo-nav-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+body .container header .header-logo-nav-container .header-logo-container {
+  margin-right: 1.8em;
+}
+
+body .container header .header-logo-nav-container .header-logo-container img {
+  width: 100%;
+}
+
+body .container header .header-logo-nav-container .header-nav .header-ul {
+  list-style: none;
+}
+
+body .container header .header-logo-nav-container .header-nav .header-ul .header-li {
+  display: inline-block;
+  margin: 0em 0.3em;
+}
+
+body .container header .header-logo-nav-container .header-nav .header-ul .header-li a {
+  padding: 0.5em;
+  text-decoration: none;
+  color: #191919;
+  font-weight: 500;
+  transition: 300ms;
+  border-radius: 100vh;
+}
+
+body .container header .header-logo-nav-container .header-nav .header-ul .header-li a:hover {
+  transition: 2s linear;
+  background: linear-gradient(to bottom, #554a4f 0%, #564c51 8.1%, #595055 15.5%, #5d565c 22.5%, #625e64 29%, #68666d 35.3%, #6d6e76 41.2%, #73767e 47.1%, #797e87 52.9%, #7e858e 58.8%, #838b95 64.7%, #88919b 71%, #8b96a0 77.5%, #8e99a4 84.5%, #8f9ba6 91.9%, #909ca7 100%);
+}
+
+body .container header .header-components-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+body .container header .header-components-container .header-components-display {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+body .container header .header-components-container .header-components-display .component {
+  margin-left: 1.5em;
+}
+
+body .container header .header-components-container .header-components-display .component button {
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+}
+
+body .container header .header-components-container .header-components-display .component .search-box {
+  width: 100%;
+  display: block;
+  transition: 0.4s linear;
+  overflow: hidden;
+  position: relative;
+  max-width: 40px;
+  outline: none;
+  border: 0px solid #000;
+  border: 1px solid red;
+}
+
+body .container header .header-components-container .header-components-display .component .search-box .search-input {
+  width: 100%;
+  display: block;
+  outline: none;
+  border: 0px solid #000;
+  font-family: 'Fira Code', monospace;
+  transition: 0.4s linear;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  padding: 10px;
+}
+
+body .container header .header-components-container .header-components-display .component .search-box .search-input::placeholder {
+  color: #ffffff;
+  font-family: 'Fira Code', monospace;
+}
+
+body .container header .header-components-container .header-components-display .component .search-box .search-icon {
+  position: absolute;
+  top: 50%;
+  right: calc(53px / 2.5);
+  transform: translate(50%, -50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+body .container header .header-components-container .header-components-display .component .search-box:hover {
+  max-width: 250px;
+}
+
+body .container header .header-components-container .header-components-display .component .search-box:hover .search-input {
+  background-color: #ffffff;
+  padding-right: 50px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 100vh;
+}
+
+body .container header .header-components-container .header-components-display .component .search-box:hover path {
+  fill: #24233A;
+  transition: 0.4s linear;
+}
+
+body .container header .header-components-container .header-components-display .component .profile-component {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+body .container header .header-components-container .header-components-display .component .profile-component .profile-container {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 100vh;
+  display: flex;
+  margin-right: 0.5em;
+  border: 1px solid white;
+  background: linear-gradient(to bottom, #554a4f, ease-in-out, #b8bdc1);
+}
+
+body .container header .header-components-container .header-components-display .component .profile-component .profile-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body .container header .header-components-container .header-components-display .component .profile-component .drop-down-container {
+  cursor: pointer;
+}
+
+body .container main .main-container .main-display {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+body .container main .main-container .main-display .main-text-display .main-text-header {
+  font-size: 70px;
+  font-weight: 600;
+  color: #191919;
+}
+
+body .container main .main-container .main-display .main-text-display .main-text-color-selector {
+  padding: 3em 0;
+}
+
+body .container main .main-container .main-display .main-text-display .main-text-color-selector .main-text-select-header {
+  font-size: 20px;
+  padding-bottom: 0.7em;
+}
+
+body .container main .main-container .main-display .main-text-display .main-text-color-selector .main-color-select-display {
+  display: flex;
+  align-items: center;
+}
+
+body .container main .main-container .main-display .main-text-display .main-text-color-selector .main-color-select-display .color-select-container .color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 2em;
+}
+
+body .container main .main-container .main-display .main-text-display .main-text-color-selector .main-color-select-display .color-select-container .color-grey {
+  background: #666666;
+  border-color: #666666;
+}
+
+body .container main .main-container .main-display .main-text-display .main-text-color-selector .main-color-select-display .color-select-container .color-orange {
+  background: #FEB554;
+  border-color: #FEB554;
+}
+
+body .container main .main-container .main-display .main-text-display .main-text-color-selector .main-color-select-display .color-select-container .color-green {
+  background: #606651;
+  border-color: #606651;
+}
+
+body .container main .main-container .main-display .main-text-display .main-text-color-selector .main-color-select-display .color-select-container .color-butter {
+  background: #EDAB7B;
+  border-color: #EDAB7B;
+}
+
+body .container main .main-container .main-display .main-text-display .main-text-color-selector .main-color-select-display .color-select-container .color-pink {
+  background: #C56A72;
+  border-color: #C56A72;
+}
+
+body .container main .main-container .main-display .main-text-display .main-text-color-selector .main-color-select-display .color-select-container .active {
+  border: 1px solid red;
+  box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+
+body .container main .main-container .main-display .main-text-display .price-container .price-display {
+  display: flex;
+  align-items: center;
+}
+
+body .container main .main-container .main-display .main-text-display .price-container .price-display .price {
+  font-size: 33px;
+  font-weight: 600;
+  margin-right: 1em;
+}
+
+body .container main .main-container .main-display .main-text-display .price-container .price-display .button-container button {
+  padding: 0.6em 2.5em;
+  border-radius: 100vh;
+  border: 0px solid #000;
+  outline: none;
+  background: #191919;
+  color: #ffffff;
+}
+
+body .container main .main-container .main-display .main-image-container .main-image-display {
+  margin-left: 10em;
+}
+
+body .container main .main-container .main-display .main-image-container .main-image-display img {
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
